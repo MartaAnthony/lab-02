@@ -26,12 +26,22 @@ Creature.prototype.render = function(){
   $('main').append($newSection);
 }
 
+const keywordExtractor = () => {
+  const keywords = [];
+  allCreatures.forEach(creature => {
+    if (!keywords.includes(creature.keyword)){
+    keywords.push(creature.keyword)
+    }
+  })
+  return keywords;
+}
+
 $.ajax('data/page1.json', {method: 'GET', dataType: 'JSON'})
   .then(horns => {
     horns.forEach(value => {
       new Creature(value).render();
       console.log(allCreatures);
-    }) //.then
+  )
     //this is where I need to build my keyword array
   })
 
