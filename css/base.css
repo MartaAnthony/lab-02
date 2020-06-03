@@ -1,11 +1,12 @@
 * {
   background-color: rgb(150, 129, 150); 
   box-sizing: border-box;
+  color: rgb(59, 34, 59);
+  font-family: 'Biryani', sans-serif;
 };
 
-
-
 main {
-  margin: auto;
+  margin: 0 auto;
+  width: 100%;
 };
 
