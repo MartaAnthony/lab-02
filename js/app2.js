@@ -54,7 +54,7 @@ const keywordExtractor = () => {
 }
 
 // getting the data from json file and creating and rendering the objects, then calling the keyword function
-$.ajax('data/page-1.json', {method: 'GET', dataType: 'JSON'})
+$.ajax('data/page-2.json', {method: 'GET', dataType: 'JSON'})
   .then(horns => {
     horns.forEach(value => {
       new Creature(value).render();
@@ -71,10 +71,10 @@ $.ajax('data/page-1.json', {method: 'GET', dataType: 'JSON'})
 //   // find the thing that was clicked
 //   let thingIClickedOn = $(this).val();
 //   $('section').hide();
-//   $(`section[class="${thingIClickedOn}"]`).show();
+//   $(`.${thingIClickedOn}`).show();
 // }
 
-// $('section').on('change', filter);
+// $('#menu').on('change', filter);
 
 $('select').on('change', function() {
   let $selection = $(this).val();
