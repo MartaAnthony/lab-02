@@ -64,9 +64,9 @@ $.ajax('data/page1.json', {method: 'GET', dataType: 'JSON'})
   })
 
 // we need a filter function
-  // identify what was clicked on
-  // remove everything
-  // show only what was clicked on
+// identify what was clicked on
+// remove everything
+// show only what was clicked on
 function filter(event) {
   // find the thing that was clicked
   let thingIClickedOn = $(this).val();
@@ -75,4 +75,4 @@ function filter(event) {
 }
 
 $('#menu').on('change', filter);
-  
+
