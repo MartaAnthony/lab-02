@@ -1,0 +1,32 @@
+
+h1 {
+  font-family: 'Merienda', cursive;
+  font-size: 36px;
+  text-align: center;
+}
+
+h2 {
+  font-family: 'Merienda', cursive;
+}
+
+section {
+  float: left;
+}
+
+div {
+  width: 400px;
+  height: 500px;
+  border: 1px solid rgb(219, 189, 189);;
+}
+
+p {
+  text-align: center;
+}
+
+select {
+  background-color: azure;
+}
+
+footer {
+ float: right;
+}
