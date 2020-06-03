@@ -26,23 +26,38 @@ Creature.prototype.render = function(){
   $('main').append($newSection);
 }
 
+// const dropDownMenu = () => {
+//   keywordExtractor();
+//   console.log("inside drop down", keywordExtractor.length, keywordExtractor);
+//   for(let i= 0; i < keywordExtractor.length; i++){
+//     $('option').append('i');
+//   }
+// }
+
+
+
+
 const keywordExtractor = () => {
   const keywords = [];
   allCreatures.forEach(creature => {
     if (!keywords.includes(creature.keyword)){
-    keywords.push(creature.keyword)
+      keywords.push(creature.keyword)
     }
   })
-  return keywords;
+  keywords.forEach(creatureAppend => {
+    let keywordAppend = `<option value="${creatureAppend}">${creatureAppend}</option>`
+    $('select').append(keywordAppend);
+
+  })
 }
+
 
 $.ajax('data/page1.json', {method: 'GET', dataType: 'JSON'})
   .then(horns => {
     horns.forEach(value => {
       new Creature(value).render();
       console.log(allCreatures);
-  )
-    //this is where I need to build my keyword array
+    })
+  }).then(() =>{
+    keywordExtractor();
   })
-
-
