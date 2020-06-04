@@ -9,3 +9,23 @@ img {
 footer {
   clear: both;
 }
+
+section {
+  display: flex;
+  /* flex-direction: row; */
+  flex-wrap: wrap;
+}
+
+div .image {
+  display: flex;
+ max-width:450px;
+}
+
+img {
+  max-width: 100%;
+  width: 400px;
+}
+
+p {
+  overflow: hidden;
+}

@@ -13,19 +13,19 @@ h2 {
   color: rgb(59, 34, 59);
   font-family: 'Merienda', cursive;
   font-size: 26px;
-  text-align: center;
+  /* text-align: center; */
   padding: 10px;
 }
 
-section {
+/* section {
   float: left;
-}
+} */
 
-div {
+/* div {
   width: 400px;
   height: 550px;
   /* border: 1px solid rgb(219, 189, 189); */
-}
+} */
 
 p {
   text-align: center;
@@ -35,6 +35,6 @@ select {
   background-color: azure;
 }
 
-footer {
+/* footer {
  float: left;
-}
+} */
