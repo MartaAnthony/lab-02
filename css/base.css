@@ -1,7 +1,15 @@
  * {
-  background-color: rgb(150, 129, 150); 
+  background-color: rgb(190, 176, 190); 
   box-sizing: border-box;
   color: rgb(59, 34, 59);
   font-family: 'Biryani', sans-serif;
 }
 
+body {
+  margin: auto;
+  width: 1200px;
+}
+
+section {
+  margin-top: 60px;
+}

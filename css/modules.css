@@ -1,7 +1,7 @@
 
 h1 {
   font-family: 'Merienda', cursive;
-  font-size: 36px;
+  font-size: 42px;
   margin: 50px 0 50px 0;
   text-align: center;
   color: rgb(219, 189, 189);
@@ -10,6 +10,7 @@ h1 {
 
 
 h2 {
+  background-color: transparent;
   color: rgb(59, 34, 59);
   font-family: 'Merienda', cursive;
   font-size: 26px;
@@ -17,24 +18,40 @@ h2 {
   padding: 10px;
 }
 
-section {
-  float: left;
-}
-
-div {
-  width: 400px;
-  height: 550px;
-  /* border: 1px solid rgb(219, 189, 189); */
-}
-
 p {
   text-align: center;
+  width: 300px;
+  overflow: hidden;
+  background: transparent;
 }
 
 select {
-  background-color: azure;
+  background-color:  rgb(219, 189, 189);
+  float: right;
+  margin-right: 100px;
+  border: 2px solid #f14ebd;
+  color: rgb(59, 34, 59);
+  text-shadow: 0 2px 2px white;
 }
 
-footer {
- float: left;
+a.button {
+  background-color: #f14ebd;
+  display: inline-block;
+  padding: 5px 15px;
+  border: 2px solid rgba(255,255,255,00);
+  border-radius: 16px;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Biryani', sans-serif;
+  font-weight: 300;
+  color: #FFFFFF;
+  text-shadow: 0 2px 2px rgb(59, 34, 59);
+  margin-bottom: 20px;
+  text-align: center;
+  transition: all 0.2s;
 }
+
+a.button:hover{
+  border-color: rgb(219, 189, 189);
+}
+
