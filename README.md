@@ -37,6 +37,14 @@ Estimate of time needed to complete: 1hr minutes
 Start time: 2:12 pm
 
 Finish time: 3:08 pm
+#
+Number and name of feature: Day 2 Templating mustache Feature 2 .
+
+Estimate of time needed to complete: 30 minutes
+
+Start time: 3:12 pm
+
+Finish time:  pm
 
 
 
