@@ -12,29 +12,13 @@ function Creature(obj){
   allCreatures.push(this);
 }
 
+
 Creature.prototype.render = function(){
 
   const myTemplate = $('#photo-template').html();
-
-  const $newSection = $(`<section class=${this.keyword}>${myTemplate}</section>`);
-
-  $newSection.find('h2').text(this.title);
-  $newSection.find('p').text(this.description);
-  $newSection.find('img').attr('src', this.image_url);
-  $newSection.find('img').attr('alt', this.keyword);
-
-
-  $('main').append($newSection);
+  let html = Mustache.render(myTemplate,this);
+  return html;
 }
-
-// const dropDownMenu = () => {
-//   keywordExtractor();
-//   console.log("inside drop down", keywordExtractor.length, keywordExtractor);
-//   for(let i= 0; i < keywordExtractor.length; i++){
-//     $('option').append('i');
-//   }
-// }
-
 
 
 // creating a drop down menu with unique keywords
@@ -57,7 +41,8 @@ const keywordExtractor = () => {
 $.ajax('data/page-2.json', {method: 'GET', dataType: 'JSON'})
   .then(horns => {
     horns.forEach(value => {
-      new Creature(value).render();
+      let receiveHtml= new Creature(value).render();
+      $('#gallery').append(receiveHtml);
       console.log(allCreatures);
     })
     keywordExtractor();
@@ -77,10 +62,8 @@ $.ajax('data/page-2.json', {method: 'GET', dataType: 'JSON'})
 // $('#menu').on('change', filter);
 
 $('select').on('change', function() {
-  let $selection = $(this).val();
+  let $selection = $(this).val()
   console.log($selection)
-  $('section').hide()
-  $(`section[class="${$selection}"]`).show()
+  $('.image').hide()
+  $(`div.${$selection}`).show()
 })
-
-

@@ -9,23 +9,24 @@
   <link href="css/base.css" rel="stylesheet" type="text/css" />
   <link href="css/layout.css" rel="stylesheet" type="text/css" />
   <link href="css/modules.css" rel="stylesheet" type="text/css" />
+  <script id="photo-template" type="text/x-tmpl-mustache">
+    <div class="{{keyword}} image">
+      <h2>{{title}}</h2>
+      <img src="{{image_url}}" alt="{{keyword}}">
+      <p>{{description}}</p>
+       </div>
+  </script>
   </head>
   <body>
     <header>
       <h1>The Gallery of Horns</h1>
-      <button> <a href="index.html">Page1</a></button>
+      <a href="index.html" class="button">Page 1</a>
       <select>
         <option value="default">Filter by Keyword</option>
       </select>
     </header>
     <main>
-      <section id="photo-template">
-        <div class="container">
-        <h2></h2>
-        <img src="" alt="">
-        <p></p>
-        </div>
-      </section>
+      <section id="gallery"></section>
     </main>
     <footer>
       &copy; 2020 Code Fellows

@@ -60,20 +60,6 @@ $.ajax('data/page-1.json', {method: 'GET', dataType: 'JSON'})
     keywordExtractor();
   })
 
-
-// we need a filter function
-// identify what was clicked on
-// remove everything
-// show only what was clicked on
-// function filter(event) {
-//   // find the thing that was clicked
-//   let thingIClickedOn = $(this).val();
-//   $('section').hide();
-//   $(`section[class="${thingIClickedOn}"]`).show();
-// }
-
-// $('section').on('change', filter);
-
 $('select').on('change', function() {
   let $selection = $(this).val()
   console.log($selection)

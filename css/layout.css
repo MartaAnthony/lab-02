@@ -1,31 +1,23 @@
 img {
-  width:400px;
   margin: 20px;
-  /* padding: 20px; */
   border: 1px solid rgb(219, 189, 189);
-  
+  width: 320px;
 }
 
 footer {
-  clear: both;
+  clear: both;background-image: none;
 }
 
 section {
   display: flex;
-  /* flex-direction: row; */
+  flex-direction: row;
   flex-wrap: wrap;
 }
 
-div .image {
-  display: flex;
- max-width:450px;
+div.image {
+  margin-bottom: 50px;
+  margin-right: 10px;
+  background-image: url("../img/scolorful.jpg");
+  padding-top: 20px;
 }
-
-img {
-  max-width: 100%;
-  width: 400px;
-}
-
-p {
-  overflow: hidden;
-}
+  
